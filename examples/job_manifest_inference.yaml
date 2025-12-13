@@ -1,1 +1,9 @@
-
+team: recsys-eu
+user: alice.smith
+job_type: inference
+gpus: 2
+duration_hours: 8
+image: registry.lenovo.com/pytorch:2.4-cuda12.1
+priority: high
+command: python serve.py --model /workspace/models/encoder --port 8080
+namespace: recsys-eu

@@ -1,0 +1,9 @@
+team: vision-china
+user: bob.lee
+job_type: interactive
+gpus: 1
+duration_hours: 4
+image: registry.lenovo.com/pytorch:2.4-cuda12.1
+priority: normal
+command: jupyter lab --ip=0.0.0.0 --no-browser --port 8888
+name: vision-china-jupyter-bob

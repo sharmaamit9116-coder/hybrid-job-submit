@@ -1,0 +1,11 @@
+team: vision-china
+user: john.doe
+job_type: training
+gpus: 32
+duration_hours: 24
+image: registry.lenovo.com/pytorch:2.4-cuda12.1
+priority: normal
+command: python train.py --model LLaMA-70B --data /workspace/data
+env:
+  NCCL_DEBUG: INFO
+  OMP_NUM_THREADS: "8"
