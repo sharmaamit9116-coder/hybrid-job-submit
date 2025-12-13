@@ -1,0 +1,17 @@
+# Optional template reference (not used by code directly).
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ name }}
+  namespace: {{ namespace }}
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: main
+          image: {{ image }}
+          command: ["/bin/bash","-lc","{{ command }}"]
+          resources:
+            limits:
+              nvidia.com/gpu: {{ gpus }}

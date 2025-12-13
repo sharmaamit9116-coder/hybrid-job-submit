@@ -1,0 +1,16 @@
+# Optional template reference (not used by code directly).
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ name }}
+  namespace: {{ namespace }}
+  annotations:
+    gpu.lenovo.com/sharing: time-slicing
+spec:
+  containers:
+    - name: main
+      image: {{ image }}
+      command: ["/bin/bash","-lc","{{ command }}"]
+      resources:
+        limits:
+          nvidia.com/gpu: {{ gpus }}
