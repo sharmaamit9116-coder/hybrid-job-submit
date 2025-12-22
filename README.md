@@ -10,7 +10,7 @@ It enforces **per-team GPU quotas** (hard-coded, realistic defaults) and returns
 - **backend**
 - **expected_start_time** (best-effort)
 
-> Minimal and interview-friendly: clear logic, meaningful errors, and runnable locally if you have `sbatch` and/or `kubectl` configured.
+
 
 ---
 
