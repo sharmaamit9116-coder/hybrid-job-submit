@@ -9,7 +9,7 @@ class TeamQuota:
     max_gpus: int
 
 
-# Hard-coded realistic-ish limits; adjust as desired.
+# Hard-coded Quota.
 TEAM_QUOTAS: Dict[str, TeamQuota] = {
     "vision-china": TeamQuota(max_gpus=128),
     "nlp-us": TeamQuota(max_gpus=256),
